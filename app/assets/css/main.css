@@ -1,0 +1,114 @@
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #212842; /* bg */
+    color: #f0e7d5; /* primary */
+}
+a {
+    color: #f0e7d5; /* primary */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Общие стили для полей и кнопок */
+input, select, textarea, button {
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #212842;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s, opacity 0.2s;
+    
+    margin-top: 0.75rem;   /* отступ сверху */
+    margin-bottom: 0.75rem; /* отступ снизу */
+}
+
+/* Поля ввода*/
+input:focus, select:focus, textarea:focus {
+    border-color: #4fd1c5; 
+    box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.3);
+}
+
+/* Кнопки */
+button {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4fd1c5;
+    border: none;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* расстояние между полями и кнопками */
+    margin-bottom: 1rem; /* пространство под формой */
+}
+
+.card {
+    color: #C2B8A5;
+    background-color: #ffffff; /* белый фон на кремовом фоне */
+    border-radius: 1rem;       /* закруглённые края */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* лёгкая тень */
+    padding: 1rem;             /* внутренние отступы */
+    transition: transform 0.2s, box-shadow 0.2s; /* анимация при наведении */
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-4px); /* эффект “подъёма” */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Стиль для текста */
+.card .title {
+    color: #4fd1c5;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.card .author {
+    font-size: 0.9rem;
+    color: #555555;
+    margin-bottom: 0.5rem;
+}
+
+.card .availability {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: #212842;
+  color: #f0e7d5;
+}
+
+.form-input:focus {
+  border-color: #4fd1c5;
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.3);
+}
+
+#map {
+    height: 18rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+}
